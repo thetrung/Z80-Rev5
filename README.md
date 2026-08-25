@@ -8,7 +8,7 @@ I have never had a real working Z80 before so this board is designed to test tha
 ![Alt](https://github.com/thetrung/Z80-Rev5/blob/main/3D_Preview.png)
 
 ### Placement (SilkScreen)
-![Alt](https://github.com/thetrung/Z80-Rev5/blob/main/SilkScreen.png)
+![Alt](https://github.com/thetrung/Z80-Rev5/blob/main/Silkscreen.png)
 
 ### Schematic 
 ![Alt](https://github.com/thetrung/Z80-Rev5/blob/main/Schematic.png)
