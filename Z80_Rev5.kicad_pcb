@@ -1017,7 +1017,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "449de070-c89d-49e3-9ed0-d0e514a9c6da")
-		(at 106 75.88 -90)
+		(at 106 76.34 -90)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN2"
@@ -1694,11 +1694,11 @@
 	(footprint "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "4c95e263-f11c-4ddf-b7da-f8cc34641015")
-		(at 124 70.25 -90)
+		(at 124.75 72.5 180)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3.4*2.1mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 3.4mm width 2.1mm Capacitor")
 		(property "Reference" "C5"
-			(at -2.25 -1 90)
+			(at 2.25 2 0)
 			(layer "F.SilkS")
 			(uuid "2522efbb-cad2-4676-9e20-54de261f1130")
 			(effects
@@ -1709,7 +1709,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at -3.25 0.5 90)
+			(at 1.25 3.5 0)
 			(layer "F.SilkS")
 			(uuid "b9b270e3-4dd0-43d7-a515-53c0e545827a")
 			(effects
@@ -1720,7 +1720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "302d3cce-8321-4471-9bcf-2ee08203ff69")
@@ -1731,7 +1731,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "703b22bf-e63b-49d1-8b4a-1d5e4397216a")
@@ -1754,16 +1754,6 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.57 1.17)
-			(end -0.57 0.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "393eff75-a3a0-494a-84c3-195e267a2985")
-		)
-		(fp_line
 			(start 3.07 1.17)
 			(end -0.57 1.17)
 			(stroke
@@ -1784,6 +1774,26 @@
 			(uuid "2b14a122-9d5d-4819-8d70-a53ed8490e74")
 		)
 		(fp_line
+			(start 3.07 -1.17)
+			(end 3.07 -0.87)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5eb96ff6-8650-4aac-ae1a-6c206e48c518")
+		)
+		(fp_line
+			(start -0.57 1.17)
+			(end -0.57 0.87)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "393eff75-a3a0-494a-84c3-195e267a2985")
+		)
+		(fp_line
 			(start -0.57 -0.87)
 			(end -0.57 -1.17)
 			(stroke
@@ -1802,16 +1812,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "f966caf7-9868-4763-aa38-78ab963c92fd")
-		)
-		(fp_line
-			(start 3.07 -1.17)
-			(end 3.07 -0.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5eb96ff6-8650-4aac-ae1a-6c206e48c518")
 		)
 		(fp_rect
 			(start -1.05 -1.3)
@@ -1836,7 +1836,7 @@
 			(uuid "9c8869f0-e3ac-453f-b0ac-e17ef10cc07e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 90)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "fb05dfaa-6a8f-404d-a940-c7b338b7a5be")
 			(effects
@@ -1847,7 +1847,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 270)
+			(at 0 0 180)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1857,7 +1857,7 @@
 			(uuid "8fa13e45-21f7-45e3-9510-a1a651c8340c")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0 270)
+			(at 2.5 0 180)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1865,194 +1865,6 @@
 			(net "VCC")
 			(pintype "passive")
 			(uuid "6f7e1651-ccc4-4a21-9946-25476beaeff2")
-		)
-		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.4mm_W2.1mm_P2.50mm.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
-		(layer "F.Cu")
-		(uuid "5d448568-e615-4ad4-838b-322f02b4d5ea")
-		(at 125 60.25 -90)
-		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3.4*2.1mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
-		(tags "C Disc series Radial pin pitch 2.50mm diameter 3.4mm width 2.1mm Capacitor")
-		(property "Reference" "C4"
-			(at 0.25 4.5 180)
-			(layer "F.SilkS")
-			(uuid "1919ffcc-20e0-4d31-86af-5a0298d8f315")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 1.75 3.5 180)
-			(layer "F.SilkS")
-			(uuid "1deb3be8-8d1b-436c-a605-e7d854805f22")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "56f9a1dd-df88-4d48-91b9-d4aecbcc230a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2d6150a9-0a1f-40a8-bc51-c4f182a2555f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/e83e0191-b534-4bf5-9195-6ec6afb35628")
-		(sheetname "/")
-		(sheetfile "Z80_Rev5.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.57 1.17)
-			(end -0.57 0.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5547e3b2-6d9e-47e3-bfe0-ff9173faa32c")
-		)
-		(fp_line
-			(start 3.07 1.17)
-			(end -0.57 1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "30dbfa57-b3a7-47d1-b2bc-486aa7afcd3c")
-		)
-		(fp_line
-			(start 3.07 0.87)
-			(end 3.07 1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f6d1b6fb-03aa-4dc9-a898-77adf612ec05")
-		)
-		(fp_line
-			(start -0.57 -0.87)
-			(end -0.57 -1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e93baa4f-f465-4c9c-8256-c3a344d8c829")
-		)
-		(fp_line
-			(start -0.57 -1.17)
-			(end 3.07 -1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0794fd31-acb9-48f1-b40f-276fc0d7c932")
-		)
-		(fp_line
-			(start 3.07 -1.17)
-			(end 3.07 -0.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f216d3ba-3464-4c95-bd26-59216f1a0993")
-		)
-		(fp_rect
-			(start -1.05 -1.3)
-			(end 3.55 1.3)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "4fcf8354-83fb-42b8-a586-63481debed1a")
-		)
-		(fp_rect
-			(start -0.45 -1.05)
-			(end 2.95 1.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "54e09b5e-ff2c-4d5a-ae94-e95d30fc210b")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 1.25 0 90)
-			(layer "F.Fab")
-			(uuid "4ae723ff-84ed-463a-abe2-07c349052ef2")
-			(effects
-				(font
-					(size 0.68 0.68)
-					(thickness 0.102)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0 270)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "GND")
-			(pintype "passive")
-			(uuid "c4c1169a-53f7-48cf-acba-e4e206a86f26")
-		)
-		(pad "2" thru_hole circle
-			(at 2.5 0 270)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "VCC")
-			(pintype "passive")
-			(uuid "cf21f4af-4c13-4122-94b4-d17e6f3142a8")
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.4mm_W2.1mm_P2.50mm.step"
@@ -2640,11 +2452,11 @@
 	(footprint "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm"
 		(layer "F.Cu")
 		(uuid "8f2c12ed-6f7a-490a-bb09-e0b732fd5d58")
-		(at 121 58.25 90)
+		(at 121.25 57.5)
 		(descr "C, Radial series, Radial, pin pitch=1.50mm, diameter=4mm, height=5mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 1.50mm diameter 4mm height 5mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C8"
-			(at 0.25 4.5 90)
+			(at -2.75 0.5 0)
 			(layer "F.SilkS")
 			(uuid "d9d34fc3-0763-45c6-8503-74cf09fe2dd3")
 			(effects
@@ -2655,7 +2467,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 1.25 3 90)
+			(at -3.25 -1 0)
 			(layer "F.SilkS")
 			(uuid "38dad0b5-8e85-404a-a1a3-a194052ed2da")
 			(effects
@@ -2666,7 +2478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5e3201ba-facd-4c01-9dd8-c065ff2507aa")
@@ -2677,7 +2489,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2f35e76b-9694-438d-9f1a-eddd0f2795fd")
@@ -2733,7 +2545,7 @@
 			(uuid "6d368a28-38e4-4ab9-a1df-daf4fe3af1e9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.75 0 90)
+			(at 0.75 0 0)
 			(layer "F.Fab")
 			(uuid "e5a50b57-89f6-4c1a-a00a-3c519ea3afd5")
 			(effects
@@ -2744,7 +2556,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
+			(at 0 0)
 			(size 1.2 1.2)
 			(drill 0.6)
 			(layers "*.Cu" "*.Mask")
@@ -2754,7 +2566,7 @@
 			(uuid "37fcbe70-b4bf-4a86-94d1-2aea6c2c9f8a")
 		)
 		(pad "2" thru_hole circle
-			(at 1.5 0 90)
+			(at 1.5 0)
 			(size 1.2 1.2)
 			(drill 0.6)
 			(layers "*.Cu" "*.Mask")
@@ -4685,7 +4497,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "d6bdd285-5429-4398-b2c7-c51a08306310")
-		(at 109.5 75.84 -90)
+		(at 109.5 76.46 -90)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN1"
@@ -6301,7 +6113,7 @@
 	(footprint "LED_THT:LED_D3.0mm"
 		(layer "F.Cu")
 		(uuid "e559f055-f9cf-4793-923f-119d5e9f6bd0")
-		(at 112.73 67.5)
+		(at 111.73 67)
 		(descr "LED, diameter 3.0mm, 2 pins, generated by kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
@@ -6493,7 +6305,7 @@
 			)
 		)
 		(point
-			(at 114 67.5)
+			(at 113 67)
 			(size 2)
 			(layer "F.Fab")
 			(uuid "538281ac-3845-4c8e-9357-854317df1660")
@@ -6536,7 +6348,7 @@
 	(footprint "LED_THT:LED_D3.0mm"
 		(layer "F.Cu")
 		(uuid "eb7f2e35-c2ab-41f7-9c02-bab9d629a707")
-		(at 117.96 67.5)
+		(at 116.96 67)
 		(descr "LED, diameter 3.0mm, 2 pins, generated by kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D2"
@@ -6728,7 +6540,7 @@
 			)
 		)
 		(point
-			(at 119.23 67.5)
+			(at 118.23 67)
 			(size 2)
 			(layer "F.Fab")
 			(uuid "f7dcd0fd-d3df-4a41-835b-f5e4d8a2bd41")
@@ -6950,7 +6762,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "f6eb3faa-21ca-447e-a7ca-d8ba5cb61e62")
-		(at 180 71.75 90)
+		(at 125.25 60.75 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3.4*2.1mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 3.4mm width 2.1mm Capacitor")
 		(property "Reference" "C10"
@@ -7010,44 +6822,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 3.07 -1.17)
-			(end 3.07 -0.87)
+			(start -0.57 1.17)
+			(end -0.57 0.87)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ead27fe7-a48b-4c8f-9888-6d1f71f72626")
-		)
-		(fp_line
-			(start -0.57 -1.17)
-			(end 3.07 -1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3fe06d0e-e14c-4542-8a5f-667dd5f9b63b")
-		)
-		(fp_line
-			(start -0.57 -0.87)
-			(end -0.57 -1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "236aaedb-87cd-4649-9a63-c4b0310355c5")
-		)
-		(fp_line
-			(start 3.07 0.87)
-			(end 3.07 1.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a21a476a-2191-4e9e-a88b-119046cc3b98")
+			(uuid "fd4f554f-a564-43c7-824d-b050359af3a9")
 		)
 		(fp_line
 			(start 3.07 1.17)
@@ -7060,14 +6842,44 @@
 			(uuid "caed3298-93a7-49c1-aef4-a9dd43390a0d")
 		)
 		(fp_line
-			(start -0.57 1.17)
-			(end -0.57 0.87)
+			(start 3.07 0.87)
+			(end 3.07 1.17)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "fd4f554f-a564-43c7-824d-b050359af3a9")
+			(uuid "a21a476a-2191-4e9e-a88b-119046cc3b98")
+		)
+		(fp_line
+			(start -0.57 -0.87)
+			(end -0.57 -1.17)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "236aaedb-87cd-4649-9a63-c4b0310355c5")
+		)
+		(fp_line
+			(start -0.57 -1.17)
+			(end 3.07 -1.17)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3fe06d0e-e14c-4542-8a5f-667dd5f9b63b")
+		)
+		(fp_line
+			(start 3.07 -1.17)
+			(end 3.07 -0.87)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ead27fe7-a48b-4c8f-9888-6d1f71f72626")
 		)
 		(fp_rect
 			(start -1.05 -1.3)
@@ -7103,7 +6915,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -7113,7 +6925,7 @@
 			(uuid "53a51ec4-ad21-4b8b-a2a3-e40ada87c7d7")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0 90)
+			(at 2.5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")

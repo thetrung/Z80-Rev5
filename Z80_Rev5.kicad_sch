@@ -6133,12 +6133,6 @@
 		(uuid "fce9a46b-d32d-438d-880c-d2f03ac08a1b")
 	)
 	(junction
-		(at 193.04 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ae1fa3b-464a-413f-b1fd-872d2c4e05b4")
-	)
-	(junction
 		(at 156.21 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6149,18 +6143,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c012f14-9ccc-4e37-b75a-87e4eb26f1f2")
-	)
-	(junction
-		(at 193.04 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23655a8f-c434-4aec-b0cc-1c4fabd3d962")
-	)
-	(junction
-		(at 238.76 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "317ffbbd-4582-42cc-90ff-45d7ad8c11cc")
 	)
 	(junction
 		(at 229.87 130.81)
@@ -6191,6 +6173,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e04a4c5-5f42-4102-b504-34ae71163783")
+	)
+	(junction
+		(at 238.76 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98fa9f47-1d22-42ec-bd16-4c36f45fda27")
 	)
 	(junction
 		(at 245.11 95.25)
@@ -6633,16 +6621,6 @@
 			(type default)
 		)
 		(uuid "23cfde8b-b6a4-4630-b9c5-33a5f28413e4")
-	)
-	(wire
-		(pts
-			(xy 180.34 148.59) (xy 193.04 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2497f46e-9a23-4cd5-a150-5b7517675f6c")
 	)
 	(wire
 		(pts
@@ -7886,6 +7864,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 21.59) (xy 238.76 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9344d6d-2934-4219-8082-dacd111b5251")
+	)
+	(wire
+		(pts
 			(xy 130.81 40.64) (xy 124.46 40.64)
 		)
 		(stroke
@@ -8013,16 +8001,6 @@
 			(type default)
 		)
 		(uuid "c5644498-b739-4f3a-9420-33e303a9cc52")
-	)
-	(wire
-		(pts
-			(xy 180.34 156.21) (xy 193.04 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5b3dff8-c5be-4b15-a425-3cdcaedb56d5")
 	)
 	(wire
 		(pts
@@ -13529,7 +13507,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 238.76 24.13 0)
+		(at 238.76 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13540,7 +13518,7 @@
 		(fields_autoplaced yes)
 		(uuid "cab3c5f1-1c7c-4ac7-9245-ab2997016079")
 		(property "Reference" "#PWR014"
-			(at 238.76 27.94 0)
+			(at 238.76 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13551,7 +13529,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 238.76 19.05 0)
+			(at 238.76 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13561,7 +13539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 24.13 0)
+			(at 238.76 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13572,7 +13550,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 24.13 0)
+			(at 238.76 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13583,7 +13561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 238.76 24.13 0)
+			(at 238.76 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14011,88 +13989,6 @@
 			(project "Z80_Rev5"
 				(path "/1dee2e6f-8929-455d-a1de-5fd790cf69ac"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 180.34 152.4 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e83e0191-b534-4bf5-9195-6ec6afb35628")
-		(property "Reference" "C4"
-			(at 184.15 151.1299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 184.15 153.6699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
-			(at 179.3748 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 180.34 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "665fdc31-5371-420f-8a69-25cb4f92d741")
-		)
-		(pin "2"
-			(uuid "cb62e1bf-3adf-4743-8f3e-c26e67e4abd0")
-		)
-		(instances
-			(project "Z80_Rev5"
-				(path "/1dee2e6f-8929-455d-a1de-5fd790cf69ac"
-					(reference "C4")
 					(unit 1)
 				)
 			)
